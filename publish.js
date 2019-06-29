@@ -18,8 +18,6 @@ writeFileSync(
   }, null, '\t'),
 );
 
-execSync('npm i --no-shrinkwrap && npm run build && npm publish', {
-  cwd: path.resolve(__dirname, 'fabric-repository'),
-});
+execSync('cd fabric-repository && npm i --no-shrinkwrap && npm run build && npm publish');
 
 console.log('Success!');
