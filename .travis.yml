@@ -3,6 +3,6 @@ node_js:
   - "12"
 deploy:
   provider: npm
-  email: "andrey@gubanov.eu"
+  email: "andrey.a.gubanov@gmail.com"
   api_key:
     secure: hbv8ngWAXx/H0UiVgvGReLL6m2nSBkfcRv2fRKSC+dfgV9KZ0XE66Gx6Q//nr7EVlzfD8kqaLwuPoxzV/7XRWRU+g9r9L+NtAVwJUT7/ivf3XFaBerIzKlSZNUCvPHNtNkc6n+ehufvxkbTExnLmvp0iLTWuvWwJrm6VMYAhG7ydY1rs4MYGhFTlHYGyV4+bBqs3P3fxGG2UMIsP7lSHGizuWdtBiVTu32IYzWADC+kc12qU14B9D1eVEbTGlXXrCG3S9/oHxXng7ybsQI3GzVvNwD07I5MM8VoF1MP5lJTvMNZRUmMVsE9iTyJ2Y/XWintidr3l45VM2E5rBx5gwQuGxh+O3o3XPPjoUpXsqHml8JYuTYnJbj/MKyoaCpLXE5Ku7Pn1XKE/S3k3uPuHgW1NP6k2GONIDZFXrkXE4TSD70Lu18eSpBEAGm8oADUSElNpWosWMNV71JG5tcYr7tyZ01lkU9Gkr8iZB4wEp0/61IYZL6hsk+jTzji9l8VbnkXWkaw3KPoTdSjKGA3WtZPBkRPefmNpqlxTgHO2uNhbgEZl8OIvmF8PJ0YfoIvODTXY4oY3s2mLDU+aKJFn0LUGNLkRNfgk3UnEY4J6BNhjfFugwXv99qbp5g8bpIXs6F9ksqbAp4EGRLc2pxl5k27O7llE+CJMsSIIjjQu1hk=
