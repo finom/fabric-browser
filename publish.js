@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const path = require('path');
 const { writeFileSync, readFileSync } = require('fs');
 
-// execSync('git clone git@github.com:fabricjs/fabric.js.git fabric-repository');
+execSync('git clone git@github.com:fabricjs/fabric.js.git fabric-repository');
 const { name, description } = require('./package.json');
 const fabricPkg = require('./fabric-repository/package.json');
 const readmePath = path.resolve(__dirname, 'fabric-repository/README.md');
