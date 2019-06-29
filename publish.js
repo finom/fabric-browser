@@ -13,7 +13,7 @@ writeFileSync(
   JSON.stringify({
     ...fabricPkg,
     optionalDependencies: {},
-    version: `${fabricPkg.version}-browser3`,
+    version: `${fabricPkg.version}-browser4`,
     name,
     description,
   }, null, '\t'),
