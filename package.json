@@ -1,0 +1,23 @@
+{
+  "name": "fabric-browser",
+  "version": "0.0.0",
+  "description": "Fabric.js bridge with no node-specific dependencies",
+  "main": "publish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clone-and-publish": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finom/fabric-browser.git"
+  },
+  "keywords": [
+    "fabric.js"
+  ],
+  "author": "Andrey Gubanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finom/fabric-browser/issues"
+  },
+  "homepage": "https://github.com/finom/fabric-browser#readme"
+}
