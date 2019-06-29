@@ -1,27 +1,30 @@
 const { execSync } = require('child_process');
 const path = require('path');
-const { readFileSync, writeFileSync } = require('fs');
+const { writeFileSync } = require('fs');
 
 execSync('git clone git@github.com:fabricjs/fabric.js.git fabric-repository');
-
-const pkgPath = path.resolve(__dirname, 'fabric-repository/package.json');
-
-const { name, description, version } = require('./package.json');
+const { name, description } = require('./package.json');
+const fabricPkg = require('./fabric-repository/package.json');
+const readmePath = path.resolve(__dirname, 'fabric-repository/README.md');
+const fabricReadme = readFileSync(readmePath);
 
 writeFileSync(
-  pkgPath,
+  path.resolve(__dirname, 'fabric-repository/package.json'),
   JSON.stringify({
-    ...JSON.parse(
-      readFileSync(pkgPath)
-    ),
+    ...fabricPkg,
     optionalDependencies: {},
-    version: `${version}-browser`,
+    version: `${fabricPkg.version}-browser3`,
     name,
     description,
   }, null, '\t'),
 );
 
+writeFileSync(
+  readmePath,
+  description + '---------' + fabricReadme,
+);
+
 execSync('cd fabric-repository && npm i --no-shrinkwrap && npm run build');
-execSync('rm package.json && npm publish fabric-repository');
+execSync('npm publish fabric-repository');
 
 console.log('Success!');
