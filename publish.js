@@ -22,6 +22,6 @@ writeFileSync(
 );
 
 execSync('cd fabric-repository && npm i --no-shrinkwrap && npm run build');
-execSync('npm publish fabric-repository');
+execSync('cd fabric-repository && npm publish .');
 
 console.log('Success!');
