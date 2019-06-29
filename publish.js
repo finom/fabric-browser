@@ -18,7 +18,7 @@ writeFileSync(
 );
 
 
-execSync('npm i && npm run build', {
+execSync('npm i && npm run build && npm publish', {
   cwd: path.resolve(__dirname, 'fabric-repository'),
 });
 
