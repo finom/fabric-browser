@@ -4,7 +4,6 @@
   "description": "Fabric.js bridge with no node-specific dependencies",
   "main": "publish.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clone-and-publish": "node . || echo \"Failed\""
   },
   "repository": {
