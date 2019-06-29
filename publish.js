@@ -13,12 +13,12 @@ writeFileSync(
       readFileSync(pkgPath)
     ),
     optionalDependencies: {},
-    name: 'fabric-browser',
+    name: 'fabric-pure-browser',
+    description: require('./package.json').description,
   }, null, '\t'),
 );
 
-
-execSync('npm i && npm run build && npm publish', {
+execSync('npm i --no-shrinkwrap && npm run build && npm publish', {
   cwd: path.resolve(__dirname, 'fabric-repository'),
 });
 

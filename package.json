@@ -1,7 +1,7 @@
 {
-  "name": "fabric-browser",
+  "name": "fabric-pure-browser",
   "version": "0.0.0",
-  "description": "Fabric.js bridge with no node-specific dependencies",
+  "description": "Fabric.js package with no node-specific dependencies (node-canvas, jsdom). The project is published once a day from 'master' branch of https://github.com/fabricjs/fabric.js repository.",
   "main": "publish.js",
   "scripts": {
     "clone-and-publish": "node . || echo \"Failed\""
