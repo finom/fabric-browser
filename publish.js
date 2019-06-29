@@ -7,7 +7,7 @@ const { name, description } = require('./package.json');
 const fabricPkg = require('./fabric-repository/package.json');
 const readmePath = path.resolve(__dirname, 'fabric-repository/README.md');
 const fabricReadme = readFileSync(readmePath);
-
+console.log('that\'s the latest build');
 writeFileSync(
   path.resolve(__dirname, 'fabric-repository/package.json'),
   JSON.stringify({
