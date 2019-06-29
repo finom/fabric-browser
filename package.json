@@ -2,7 +2,8 @@
   "name": "fabric-pure-browser",
   "private": true,
   "version": "0.0.0",
-  "description": "Fabric.js package with no node-specific dependencies (node-canvas, jsdom). The project is published once a day (in case if a new version appears) from 'master' branch of https://github.com/fabricjs/fabric.js repository.",
+  "description": "Fabric.js package with no node-specific dependencies (node-canvas, jsdom). The project is published once a day (in case if a new version appears) from 'master' branch of https://github.com/fabricjs/fabric.js repository.\
+  You can keep original imports in your code if you add an alias to your webpack file: `resolve: { alias: { fabric: 'fabric-pure-browser' } }`",
   "main": "publish.js",
   "scripts": {
     "clone-and-publish": "node . || echo \"Failed\""
