@@ -1,24 +1,23 @@
 {
-  "name": "fabric-pure-browser",
-  "private": true,
-  "version": "0.0.0",
-  "description": "Fabric.js package with no node-specific dependencies (node-canvas, jsdom). The project is published once a day (in case if a new version appears) from 'master' branch of https://github.com/fabricjs/fabric.js repository.\
-  You can keep original imports in your code if you add an alias to your webpack file: `resolve: { alias: { fabric: 'fabric-pure-browser' } }`",
-  "main": "publish.js",
-  "scripts": {
-    "clone-and-publish": "node . || echo \"Failed\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/finom/fabric-browser.git"
-  },
-  "keywords": [
-    "fabric.js"
-  ],
-  "author": "Andrey Gubanov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/finom/fabric-browser/issues"
-  },
-  "homepage": "https://github.com/finom/fabric-browser#readme"
+	"name": "fabric-pure-browser",
+	"private": true,
+	"version": "0.0.0",
+	"description": "Fabric.js package with no node-specific dependencies (node-canvas, jsdom). The project is published once a day (in case if a new version appears) from 'master' branch of https://github.com/fabricjs/fabric.js repository. \n You can keep original imports in your code if you add an alias to your webpack file: `resolve: { alias: { fabric: 'fabric-pure-browser' } }`",
+	"main": "publish.js",
+	"scripts": {
+		"clone-and-publish": "node . || echo \"Failed\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/finom/fabric-browser.git"
+	},
+	"keywords": [
+		"fabric.js"
+	],
+	"author": "Andrey Gubanov",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/finom/fabric-browser/issues"
+	},
+	"homepage": "https://github.com/finom/fabric-browser#readme"
 }
