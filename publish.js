@@ -12,6 +12,7 @@ writeFileSync(
     ...JSON.parse(
       readFileSync(pkgPath)
     ),
+    version: '0.0.1',
     optionalDependencies: {},
     name: 'fabric-pure-browser',
     description: require('./package.json').description,
