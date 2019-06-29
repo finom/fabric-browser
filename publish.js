@@ -13,7 +13,7 @@ writeFileSync(
   JSON.stringify({
     ...fabricPkg,
     optionalDependencies: {},
-    version: `${fabricPkg.version}-browser5`,
+    version: `${fabricPkg.version}-browser6`,
     name,
     description,
   }, null, '\t'),
@@ -21,7 +21,7 @@ writeFileSync(
 
 writeFileSync(
   readmePath,
-  description + '\n-----------\n\n' + fabricReadme,
+  name + '\n-----------\n\n' + description + '\n\n\n' + fabricReadme,
 );
 
 execSync('cd fabric-repository && npm i --no-shrinkwrap && npm run build');
