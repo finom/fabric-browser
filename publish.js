@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const path = require('path');
 const { writeFileSync, readFileSync } = require('fs');
 
-execSync('git clone https://github.com/fabricjs/fabric.js.git fabric-repository');
+execSync('rm -rf fabric-repository && git clone https://github.com/fabricjs/fabric.js.git fabric-repository');
 const { name, description } = require('./package.json');
 const fabricPkg = require('./fabric-repository/package.json');
 const readmePath = path.resolve(__dirname, 'fabric-repository/README.md');
@@ -13,7 +13,6 @@ writeFileSync(
   JSON.stringify({
     ...fabricPkg,
     optionalDependencies: {},
-    version: `${fabricPkg.version}-browser`,
     name,
     description,
   }, null, '\t'),
