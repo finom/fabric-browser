@@ -70,7 +70,7 @@ fetchLatestReleaseTag("fabricjs/fabric.js", function (latestTag) {
   );
 
   execSync("cd fabric-repository && npm i --no-shrinkwrap && npm run build");
-  execSync("npm publish fabric-repository");
+  execSync("npm publish ./fabric-repository");
 
   console.log("Success!");
 });
